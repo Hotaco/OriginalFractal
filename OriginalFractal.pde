@@ -1,24 +1,36 @@
 public void setup()
 {
-  background(0);
   size(500,500);
 }
 public void draw()
 {
-
-  circl(0,500,500);
+  background(0);
+  trongle(0,500,500);
+  trongle1(0,500,500);
 }
-public void circl(int x, int y, int len) 
+public void trongle(int x, int y, int len) 
 {
   if(len <= 30)
   {
-    circle(x,x+len/2,x+len);
+    circle(y-len,x+len,y);
   }
   else
   {
-    fill(x+mouseX,y+mouseY,x+y);
-    circl(x,y,len/2);
-    circl(x+len/2,y,len/2);
-    circl(x+len/4,y-len/2,len/2);
+    fill(x,y,x);
+    trongle(x+len/2,y,len/2);
+    trongle(x+len/4,y-len/2,len/2);
+  }
+}
+public void trongle1(int x, int y, int len) 
+{
+  if(len <= 30)
+  {
+    circle(y-len,x+len,y);
+  }
+  else
+  {
+    fill(x,y,len);
+    trongle1(x,y,len/2);
+    trongle1(x+len/4,y-len/2,len/2);
   }
 }
