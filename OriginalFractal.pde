@@ -1,10 +1,11 @@
 public void setup()
 {
+  background(0);
   size(500,500);
 }
 public void draw()
 {
-  background(0);
+
   circl(0,500,500);
 }
 public void circl(int x, int y, int len) 
