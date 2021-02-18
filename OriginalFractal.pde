@@ -7,7 +7,7 @@ public void draw()
     noFill();
   circl(250,250,250);
 }
-public void circl(int x, int y, int diam)
+public void circl(float x, float y, float diam)
 {
   if(diam <= 60)
   {
