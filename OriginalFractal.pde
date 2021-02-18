@@ -9,7 +9,7 @@ public void draw()
 }
 public void circl(int x, int y, int len) 
 {
-  if(len <= 30)
+  if(len <= 60)
   {
     circle(x,x+len/2,x+len);
   }
