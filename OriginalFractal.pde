@@ -10,7 +10,7 @@ public void circl(int x, int y, int len)
 {
   if(len <= 60)
   {
-    circle(x,x+len/2,x+len);
+    circle(x,x+len/2,x+len/2);
   }
   else
   {
