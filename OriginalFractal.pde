@@ -4,6 +4,7 @@ public void setup()
 }
 public void draw()
 {
+    noFill();
   circl(250,250,250);
 }
 public void circl(int x, int y, int diam)
@@ -14,7 +15,6 @@ public void circl(int x, int y, int diam)
   }
   else
   {
-    noFill();
     circle(x,y,diam);
     circl(x,y,diam/2);
     circl(x+diam/2,y,diam/2);
