@@ -15,7 +15,6 @@ public void circl(int x, int y, int len)
   }
   else
   {
-    fill(x+mouseX,y+mouseY,x+y);
     circl(x,y,len/2);
     circl(x+len/2,y,len/2);
     circl(x+len/4,y-len/2,len/2);
