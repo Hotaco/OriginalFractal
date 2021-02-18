@@ -4,7 +4,6 @@ public void setup()
 }
 public void draw()
 {
-  noFill();
   circl(250,250,250);
 }
 public void circl(float x, float y, float diam)
