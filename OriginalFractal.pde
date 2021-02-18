@@ -4,19 +4,21 @@ public void setup()
 }
 public void draw()
 {
-  background(0);
-  trongle(0,500,500-mouseX);
+  noFill();
+  circl(250,250,250);
 }
-public void trongle(int x, int y, int len) 
+public void circl(float x, float y, float diam)
 {
-  if(len <= 30)
+  if(diam <= 60)
   {
-    triangle(x,y,x+len/2,y-len,x+len,y);
+    circle(x,y,diam);
   }
   else
   {
-    trongle(x,y,len/2);
-    trongle(x+len/2,y,len/2);
-    trongle(x+len/4,y-len/2,len/2);
+    circl(x,y,diam/2);
+    circl(x+diam/2,y,diam/2);
+    circl(x-diam/2,y,diam/2);
+    circl(x,y+diam/2,diam/2);
+    circl(x,y-diam/2,diam/2);
   }
 }
