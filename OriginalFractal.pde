@@ -19,3 +19,4 @@ public void trongle(int x, int y, int len)
     trongle(x+len/2,y,len/2);
     trongle(x+len/4,y-len/2,len/2);
   }
+}
