@@ -16,7 +16,7 @@ public void circl(float x, float y, float diam, float diam1)
   }
   else
   {
-    circle(x,y,diam);
+    ellipse(x,y,diam,diam);
     circl(x,y,diam/2,diam/2);
     circl(x+diam/2,y,diam/2,diam/2);
     circl(x-diam/2,y,diam/2,diam/2);
