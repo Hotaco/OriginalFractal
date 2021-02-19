@@ -6,6 +6,7 @@ public void draw()
 {
   background(255);
   noFill();
+  rect(200,200,200,200);
   circ(250,250,250-mouseX);
 }
 public void circ(float x, float y, float diam)
