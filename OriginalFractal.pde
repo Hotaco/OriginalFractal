@@ -6,9 +6,9 @@ public void draw()
 {
   background(255);
   noFill();
-  circl(250,250,250-mouseX);
+  circ(250,250,250-mouseX);
 }
-public void circl(float x, float y, float diam)
+public void circ(float x, float y, float diam)
 {
   if(diam <= 50)
   {
@@ -16,11 +16,11 @@ public void circl(float x, float y, float diam)
   }
   else
   {
-
-    circl(x,y,diam/2);
-    circl(x+(diam/2),y,diam/2);
-    circl(x-(diam/2),y,diam/2);
-    circl(x,y+(diam/2),diam/2);
-    circl(x,y-(diam/2),diam/2);
+    circle(x,y,diam);
+    circ(x,y,diam/2);
+    circ(x+(diam/2),y,diam/2);
+    circ(x-(diam/2),y,diam/2);
+    circ(x,y+(diam/2),diam/2);
+    circ(x,y-(diam/2),diam/2);
   }
 }
