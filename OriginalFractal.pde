@@ -10,7 +10,7 @@ public void draw()
 }
 public void circl(float x, float y, float diam)
 {
-  if(diam <= 60)
+  if(diam <= 50)
   {
     circle(x,y,diam);
   }
