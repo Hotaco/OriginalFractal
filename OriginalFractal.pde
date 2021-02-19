@@ -6,7 +6,7 @@ public void draw()
 {
   background(255);
   noFill();
-  circl(250,250,250-mouseX,250-mouseX);
+  circl(250,250,250-mouseX,250);
 }
 public void circl(float x, float y, float diam, float diam1)
 {
@@ -16,7 +16,7 @@ public void circl(float x, float y, float diam, float diam1)
   }
   else
   {
-    ellipse(x,y,diam,diam);
+    ellipse(x,y,diam,diam1);
     circl(x,y,diam/2,diam/2);
     circl(x+diam/2,y,diam/2,diam/2);
     circl(x-diam/2,y,diam/2,diam/2);
